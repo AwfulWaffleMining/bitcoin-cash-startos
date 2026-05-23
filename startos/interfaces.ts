@@ -1,9 +1,8 @@
 import { sdk } from './sdk'
 
 export const setInterfaces = sdk.setupInterfaces(async ({ effects }) => {
-  const host = sdk.MultiHost.of(effects, 'main')
-
-  const p2pOrigin = await host.bindPort(8333, {
+  const p2pMulti = sdk.MultiHost.of(effects, 'p2p')
+  const p2pOrigin = await p2pMulti.bindPort(8333, {
     protocol: null,
     addSsl: null,
     preferredExternalPort: 8333,
@@ -13,9 +12,9 @@ export const setInterfaces = sdk.setupInterfaces(async ({ effects }) => {
     name: 'P2P Network',
     id: 'p2p',
     description: 'Bitcoin Cash peer-to-peer network port',
-    type: 'api',
+    type: 'p2p',
     masked: false,
-    schemeOverride: null,
+    schemeOverride: { ssl: null, noSsl: null },
     username: null,
     path: '',
     query: {},
