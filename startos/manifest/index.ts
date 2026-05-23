@@ -10,7 +10,7 @@ export const manifest = setupManifest({
   marketingUrl: 'https://bitcoincashnode.org/',
   donationUrl: null,
   description: {
-    short: 'Bitcoin Cash full node (BCHN v29.0.1)',
+    short: 'Bitcoin Cash full node (BCHN v29.0.0)',
     long: 'Bitcoin Cash Node (BCHN) is a full node implementation of the Bitcoin Cash protocol. Required by CKPool BCH for solo mining block templates.',
   },
   volumes: ['main'],
