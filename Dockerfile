@@ -1,5 +1,5 @@
 FROM debian:bookworm-slim AS builder
-ARG BCHN_VERSION=29.0.1
+ARG BCHN_VERSION=29.0.0
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
 RUN wget -q "https://github.com/bitcoin-cash-node/bitcoin-cash-node/releases/download/v${BCHN_VERSION}/bitcoin-cash-node-${BCHN_VERSION}-x86_64-linux-gnu.tar.gz" \
     -O /tmp/bchn.tar.gz && \
