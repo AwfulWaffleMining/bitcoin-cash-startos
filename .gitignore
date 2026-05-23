@@ -1,0 +1,5 @@
+node_modules/
+dist/
+images/
+*.s9pk
+*.tar.gz
