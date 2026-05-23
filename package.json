@@ -1,0 +1,13 @@
+{
+  "name": "bitcoin-cash-startos",
+  "version": "29.0.1",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@start9labs/start-sdk": "^1.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
