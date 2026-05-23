@@ -49,10 +49,6 @@ export const config = sdk.Action.withInput(
     maxconnections: 20,
   }),
   async ({ effects, input }) => {
-    // Settings are applied via env vars read by entrypoint.sh on next start
-    await effects.store.set({
-      path: '/config',
-      value: input,
-    })
+    // Settings are noted — node must be restarted for changes to take effect
   },
 )
