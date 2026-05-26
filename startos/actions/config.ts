@@ -3,6 +3,13 @@ import { sdk } from '../sdk'
 const { InputSpec, Value } = sdk
 
 export const inputSpec = InputSpec.of({
+  zmqEnabled: Value.toggle({
+    name: 'ZMQ Enabled',
+    description: 'Enables ZeroMQ block notifications. Required by CKPool BCH and other services. Always on.',
+    default: true,
+    immutable: true,
+  }),
+
   prune: Value.number({
     name: 'Prune Mode (MB)',
     description:
@@ -44,6 +51,7 @@ export const config = sdk.Action.withInput(
   }),
   inputSpec,
   async ({ effects }) => ({
+    zmqEnabled: true,
     prune: 0,
     dbcache: 512,
     maxconnections: 20,
