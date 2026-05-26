@@ -11,7 +11,7 @@ export const syncConfirm = sdk.Action.withoutInput(
       'CKPool BCH will automatically become available once sync is complete. ' +
       'Click the play button to confirm and proceed.',
     warning: null,
-    allowedStatuses: 'only-stopped' as const,
+    allowedStatuses: 'any' as const,
     group: null,
     visibility: 'enabled' as const,
   }),
