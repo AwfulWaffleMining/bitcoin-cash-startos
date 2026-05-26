@@ -101,7 +101,7 @@ export const main = sdk.setupMain(async ({ effects }) => {
             const pct = (progress * 100).toFixed(2)
             return {
               result: 'loading',
-              message: `Syncing: ${pct}% (block ${blocks.toLocaleString()} of ~${headers.toLocaleString()})`,
+              message: `Syncing blocks...${pct}%`,
             }
           } catch (e: any) {
             return {
