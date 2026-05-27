@@ -7,8 +7,8 @@ export const manifest = setupManifest({
   packageRepo: 'https://github.com/AwfulWaffleMining/bitcoin-cash-startos',
   upstreamRepo: 'https://github.com/bitcoin-cash-node/bitcoin-cash-node',
   supportSite: 'https://docs.bitcoincashnode.org/',
-  marketingUrl: 'https://www.awfulwafflemining.com',
-  donationUrl: 'https://www.awfulwafflemining.com/donate',
+  marketingUrl: 'https://bitcoincashnode.org/',
+  donationUrl: null,
   description: {
     short: 'Bitcoin Cash full node (BCHN v29.0.0)',
     long: 'Bitcoin Cash Node (BCHN) is a full node implementation of the Bitcoin Cash protocol. Required by CKPool BCH for solo mining block templates.',
